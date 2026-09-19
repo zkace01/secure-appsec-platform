@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+
+# Build output and test artifacts
+dist/
+build/
+coverage/
+.nyc_output/
+
+# Environment files: commit only documented, non-secret templates
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Tool caches and temporary files
+.cache/
+.tmp/
+tmp/
+*.tsbuildinfo
+
+# IDE and operating-system files
+.idea/
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+.DS_Store
+Thumbs.db
+
+# Local security-tool output; retain reviewed evidence in documentation instead
+reports/
+zap_report.*
+
