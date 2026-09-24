@@ -1,0 +1,25 @@
+{
+  "name": "secure-appsec-platform",
+  "version": "0.1.0",
+  "private": true,
+  "description": "An AppSec-focused vulnerability management platform.",
+  "type": "module",
+  "packageManager": "npm@11.13.0",
+  "engines": {
+    "node": ">=24.11.0 <25",
+    "npm": ">=11"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "dev:api": "npm run dev --workspace=@secure-appsec/api",
+    "dev:web": "npm run dev --workspace=@secure-appsec/web",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "db:up": "docker compose --env-file .env -f infra/compose.yaml up -d db",
+    "db:down": "docker compose --env-file .env -f infra/compose.yaml down"
+  }
+}

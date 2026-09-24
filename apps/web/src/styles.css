@@ -1,0 +1,2 @@
+body { font-family: system-ui, sans-serif; margin: 0; background: #f5f7fa; color: #172033; }
+main { max-width: 960px; margin: auto; padding: 2rem; } section { background: white; padding: 1rem; margin: 1rem 0; border-radius: .5rem; } form { display: flex; flex-wrap: wrap; gap: .5rem; } input, select, button { padding: .5rem; } .warning { background: #fff3cd; padding: .75rem; border-left: 4px solid #d39e00; } [role="alert"] { color: #a61b1b; }

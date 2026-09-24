@@ -2,12 +2,12 @@
 
 ## Phase 0 — Project definition
 
-- [ ] Create repository
-- [ ] Create AGENTS.md
-- [ ] Create REQUIREMENTS.md
-- [ ] Create ARCHITECTURE.md
-- [ ] Create ROADMAP.md
-- [ ] Define Definition of Done
+- [X] Create repository
+- [X] Create AGENTS.md
+- [X] Create REQUIREMENTS.md
+- [X] Create ARCHITECTURE.md
+- [X] Create ROADMAP.md
+- [X] Define Definition of Done
 
 ## Phase 1 — Minimal application
 

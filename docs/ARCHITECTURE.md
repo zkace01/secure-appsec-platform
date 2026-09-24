@@ -269,3 +269,28 @@ security issues, triage findings, remediate vulnerabilities, verify fixes and
 prevent regressions."
 
 That distinction is central to the project.
+
+## 12. Version policy
+
+The initial platform baseline is:
+
+- Node.js 24 LTS
+- TypeScript 5.9.x
+- Express 5.x
+- PostgreSQL 17.x
+- Prisma ORM 7.x
+
+Only supported, stable major versions are used as the project baseline.
+Release candidates and end-of-life runtime versions are not used in the
+application or CI environments.
+
+Node.js versions must be LTS releases. Dependency versions are resolved and
+reproduced through the committed lockfile. Docker image tags are pinned to a
+major version during local development and must be reviewed before promotion
+to CI or a deployed environment; immutable image digests will be introduced
+when container delivery is added.
+
+Dependency or runtime upgrades require review of release notes, automated
+tests, and the security checks available at that phase of the project. Major
+version upgrades must be documented as an architectural decision when they
+introduce relevant compatibility, security, or operational changes.
